@@ -1,94 +1,81 @@
-README – Banco de Dados da Loja Tech
-Informações do Aluno
+# 🏪 Banco de Dados – Loja Tech
 
-Curso: Engenharia de Software
+## 📘 Sobre o Projeto
+Este trabalho foi desenvolvido para a disciplina **Banco de Dados Relacional**, no curso de **Engenharia de Software – Turma B**, do professor **Fabrício Dias**.  
+O objetivo foi montar um banco de dados simples para o sistema de vendas da **Loja Tech**, contendo clientes, produtos, pedidos e itens dos pedidos.
 
-Turma: B
+---
 
-Professor: Fabrício Dias
+## 🗂️ Tabelas Criadas
+O projeto contém as seguintes tabelas:
 
-Aluno: Hugo Rodrigues
+### 👤 Clientes
+Armazena nome, email, telefone e cidade.
 
-Descrição do Trabalho
+### 📦 Produtos
+Contém nome do produto, preço e estoque disponível.
 
-Este projeto foi desenvolvido para a disciplina de Banco de Dados Relacional.
-O objetivo foi criar a estrutura de um sistema simples de vendas para uma loja fictícia chamada Tech.
-Durante o trabalho, foram criadas tabelas, inseridos dados fictícios e realizadas consultas SQL para praticar comandos fundamentais do MySQL.
+### 🧾 Pedidos
+Guarda os pedidos feitos pelos clientes.
 
-Tabelas Criadas
+### 🛒 Itens_Pedido
+Registra os produtos que fazem parte de cada pedido.
 
-O banco conta com as seguintes tabelas principais:
+Cada tabela possui **chave primária** e, quando necessário, **chave estrangeira** para fazer os relacionamentos.
 
-Clientes: armazena os dados dos clientes.
+---
 
-Produtos: contém os produtos disponíveis na loja.
+## 📑 O que o Projeto Inclui
+- Criação do banco de dados **Tech**
+- Criação e relacionamento das tabelas
+- Inserção de dados fictícios (clientes, produtos, pedidos e itens)
+- Consultas SQL para responder às perguntas do trabalho
 
-Pedidos: registra cada pedido realizado.
+---
 
-Itens_Pedido: guarda os produtos relacionados a cada pedido.
+## 🚀 Como Executar
+1. Abra o **MySQL Workbench**  
+2. Crie uma nova aba de query  
+3. Copie o arquivo SQL completo  
+4. Cole no editor  
+5. Execute tudo  
+6. As tabelas serão criadas e preenchidas automaticamente  
+7. Depois, execute as consultas SELECT incluídas no final do script  
 
-As tabelas possuem chaves primárias e fazem uso de chaves estrangeiras para garantir os relacionamentos corretos.
+---
 
-Conteúdo do Projeto
+## 🔎 Consultas Presentes no Projeto
+O script contém consultas para:
 
-O arquivo SQL inclui:
+- 📋 Exibir todos os clientes  
+- 💲 Listar produtos com preço acima de R$150  
+- 🔗 Mostrar pedidos com o nome do cliente  
+- 🛍️ Listar itens do pedido 1  
+- 🧮 Calcular o valor total do pedido 1  
+- 📦 Listar produtos com estoque acima de 30  
+- 🌆 Mostrar pedidos de clientes de Maricá  
+- 🙋‍♂️ Listar produtos comprados pelo cliente de ID 1  
+- #️⃣ Contar quantos pedidos existem no total  
+- ➕ Somar todo o estoque disponível  
 
-Criação do banco de dados Tech
+---
 
-Criação das tabelas
+## 🧠 Formas Normais (Resumo Simples)
+### **1ª Forma Normal (1FN)**
+Cada coluna guarda um valor simples e organizado.
 
-Inserção de dados (clientes, produtos, pedidos e itens)
+### **2ª Forma Normal (2FN)**
+Os dados dependem totalmente da chave primária da tabela.
 
-Consultas com SELECT para prática de filtros, junções e cálculos simples
+### **3ª Forma Normal (3FN)**
+Os campos não dependem uns dos outros, só da chave.
 
-Como Executar
+Esse conjunto evita redundâncias e mantém os dados mais limpos e fáceis de consultar.
 
-Abra o MySQL Workbench.
+---
 
-Copie o conteúdo completo do arquivo .sql.
+## ✅ Conclusão
+Este projeto ajudou a praticar a criação e organização de um banco de dados relacional completo.  
+Inclui modelagem, tabelas, chaves primárias/estrangeiras, inserção de dados e consultas SQL fundamentais.
 
-Cole no editor do MySQL.
-
-Execute o script (todo de uma vez ou por partes).
-
-Após isso, o banco será criado automaticamente e preenchido com os dados fictícios.
-Você pode executar as consultas existentes para visualizar os resultados.
-
-Consultas Realizadas
-
-Alguns exemplos de consultas presentes no projeto:
-
-Listar todos os clientes
-
-Mostrar produtos acima de um determinado valor
-
-Consultar pedidos com o nome do cliente
-
-Ver itens do pedido 1
-
-Calcular valor total de um pedido
-
-Filtrar produtos por quantidade em estoque
-
-Consultar pedidos por cidade
-
-Mostrar produtos comprados por um cliente específico
-
-Contar pedidos cadastrados
-
-Calcular o estoque total da loja
-
-Formas Normais (Resumo)
-
-O banco foi estruturado respeitando as três formas normais principais:
-
-1ª FN: não há colunas com valores múltiplos.
-
-2ª FN: todos os dados são totalmente dependentes da chave primária.
-
-3ª FN: não existe dependência entre atributos que não sejam chave.
-
-Conclusão
-
-Este trabalho ajudou a compreender melhor a organização e o funcionamento de um banco de dados relacional.
-Foi possível praticar a criação de tabelas, relacionamentos, inserção de dados e consultas básicas em SQL, reforçando conceitos importantes da disciplina.
+---
