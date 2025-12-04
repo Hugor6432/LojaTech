@@ -1,3 +1,5 @@
+
+
 # 🏪 Banco de Dados – Loja Tech
 
 ## 📘 Sobre o Projeto
